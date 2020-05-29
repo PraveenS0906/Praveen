@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Thee__PS</title>
+        <link href="favicon.ico" rel="icon"/>
+        <link href="Style.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"/>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="lightbox/lightbox.min.css">
+        <script src="lightbox/lightbox-plus-jquery.min.js"></script>
+        <link rel="stylesheet" href="Venobox/venobox.css" type="text/css" media="screen" />
+        <script src="venobox/venobox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    </head>
+    <body style="background-color: rgb(255, 255, 250);">
+        <!-- Navigation Bar-->
+        <section id="nav-bar">
+            <nav class="navbar navbar-expand-lg ">
+                <a class="navbar-brand" href="#"><img src="my logos/logo1.png"/></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#slider" style="padding:17.5px 20px 17.5px 35px;">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#about" style="padding:17.5px 20px 17.5px 35px;">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#experiences" style="padding:17.5px 20px 17.5px 20px;">Experiences</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link " href="#project" style="padding:17.5px 20px 17.5px 35px;">Projects</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link " href="#portfolio" style="padding:17.5px 20px 17.5px 25px;">
+                        Portfolio
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#contact" style="padding:17.5px 20px 17.5px 30px;">Contact</a>
+                    </li>
+                  </ul>
+                  <script type="text/javascript">$(document).on('click', 'ul li', function(){$(this).addclass('active').siblings().removeclass('active')})    </script>
+                  <!--<form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  </form>
+                  -->
+                </div>
+            </nav>
+        </section>
+        <!-------Slider-------->
+        
+        <div id="slider">
+          <div id="headerslider" class="carousel slide" data-ride="carousel" >
+            <ol class="carousel-indicators">
+              <li data-target="#headerslider" data-slide-to="0" class="active"></li>
+              <li data-target="#headerslider" data-slide-to="1"></li>
+              <li data-target="#headerslider" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" style="margin-top: -90px;">
+              <div class="carousel-item active">
+                <img class="d-block img-fluid" src="Website photos/bg4.jpg" alt="First slide"  >
+                <div class="carousel-caption">
+                      <h1 class="left1">Photographer</h1>
+                      <h1 style="position: relative; top: -30px; ">&</h1>
+                      <h1 class="right1">Filmmaker</h1>
+                </div>
+              </div>
+              <div class="carousel-item" style="margin-top: -150px;">
+                <img class="d-block img-fluid" src="Website photos/12.jpg" alt="Second slide" >
+                <div class="carousel-caption">
+                  <h1 class="left2">Music</h1>
+                  <h1 class="right2">Lover</h1>
+                </div>
+              </div>
+              <div class="carousel-item" style="margin-top: -150px;">
+                <img class="d-block img-fluid" src="Website photos/20.jpg" alt="Third slide">
+                <div class="carousel-caption">
+                  <h1 class="left3">Web</h1>
+                  <h1 class="right3">Developer</h1>
+                </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+          
+        </div>
+        <!--About Me-->
+        <section id="about">
+          <div class="heading">
+            <h1 >Profile</h1>
+            <p style="font-size: 18px;">I'm a Creative Web-Developer</p>
+            <hr style="margin: 35px auto;" width="50%"/>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 style="font-family:'Lekton', sans-serif;">About Me</h2>
+                <div class="about-content" style="font-family:'Nunito', sans-serif; font-size: 18px;">
+                  I am a 2nd year chemical engineering undergraduate student at
+                  Indian Institute Of Technology, Delhi.I am a Web-Developer.
+                  I follow my passion of Photography and filmmaking. 
+                  I am doing a project on Computational analysis of thermodynamic 
+                  properties at liquid-vapor coexistence. I have enrolled 22 credits this
+                  semester. Basically, I am an overthinker and I can spend hours selecting
+                  wallpaper for my desktop and my website.Also I like working in a team, you'll learn faster and much more.
+                  As the saying goes:"Two heads are better than one".
+                  
+                </div>
+              </div>
+              <div class="profile-pic">
+                <img src="website photos/myprofile.jpg"/>
+              </div>
+              <div class="details" style="margin-left: 25px;">
+                  <h2 style="position: relative; top: -18px; left: -2px; font-family:'Lekton', sans-serif;">Details</h2>
+                  <h5 style="font-family: 'Abel', sans-serif; font-size: 25px;">Name:</h5>
+                  <p style="font-family:'Nunito', sans-serif;font-size: 18px;">Praveen Soni(PS)</p>
+                  <h5 style="font-family: 'Abel', sans-serif;font-size: 25px;">Location:</h5>
+                  <p style="font-family:'Nunito', sans-serif; font-size: 18px;">Vindhyachal Hostel, IIT Delhi, Hauz Khas, New Delhi, 110016</p>
+                  <h5 style="font-family: 'Abel', sans-serif;font-size: 25px;">Email:</h5>
+                  <a href="mailto:sonipraveen255@gmail.com" style="color: black;"><p style="font-family:'Nunito', sans-serif;font-size: 18px;">sonipraveen255@gmail.com</p></a>
+                  <h5 style="font-family: 'Abel', sans-serif;font-size: 25px;">Contact:</h5>
+                  <p style="font-family:'Nunito', sans-serif;font-size: 18px;">8890410233</p>
+              </div>
+              <div class="social" style="margin-left: -45px;">
+                <h2 style="font-size: 26px; font-family:'Lekton', sans-serif; font-weight: 600;">Follow Me on</h2>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/praveen.soni.37266" target="_blank" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/thee__ps_/" target="_blank" class="insta"><i class="fab fa-instagram"></i></a>
+                    <a href="https://twitter.com/Praveen38427691"target="_blank"  class="twit"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/praveen-soni-598500190/" target="_blank" class="linked"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+              </div>
+              <div class="myresume" style="margin-left: 46px;">
+                <a href="file:///C:/Users/Praveen%20Soni/Desktop/Foriegn%20internship/CV_Praveen%20Soni.pdf" target="_blank" ><button class="btn">My Resume</button></a> 
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--Experiences-->
+        
+        <section id="experiences">
+            <div class="container">
+                <h1>Experiences</h1>
+               <div id="experiences" class="container">
+                    
+              <p class="lead" style="margin-top: -10px;">
+                “Protons give an atom its identity, electrons its personality.”<br>- Bill Bryson, A short history of nearly everything
+              </p>
+              <hr style=" background-color:rgba(245, 245, 245, 0.5); margin: 40px  auto 30px auto; width: 100%;">
+              
+              <h3>Educations</h3>
+              <hr style=" height:2px; background-color:rgba(245, 245, 245, 0.5); position: relative; left: 19px; top: -10px; width: 9.5%;">
+              
+              
+              <div class="experiences">
+              
+                        
+                <div class="experience row">
+                  <div class="col-md-4">
+                    <h4>Indian Institute of Technology, Delhi</h4>
+                    <p class="experience-period" style="margin-right: -12px;">
+                       2018				- 
+                       2023			</p>
+                  </div>
+                  <div class="col-md-8">
+                    <p>
+                      <strong style="font-size: 18px; font-family:'Nunito', sans-serif;">Course - Chemical Engineering:</strong>
+                      <span class="hidden-phone" style="font-size: 18px;">
+                        Currently I am a second year Chemical Enginerring undegraduate 
+                        student at one of the institute of Eminence. Many good companies visit
+                         IITD for chemical. The Average Package for Chemical is 12LPA.
+                          So overall ,its a good option to start ur career with.Here, 
+                          I have done 
+                          a project on “Numerical Analysis of Computational Application in Microelectronics”,
+                           which could be a skill helpful in pursuing my interests. 
+                            I have done courses on Chemistry of Interfaces,
+                            Mass and energy balance & Transport Phenomena.
+                            Currently, I am studying Chemical Thermodynamics, Heat Transfer, 
+                            Chemical reaction engineering and Fluid Mechanics this semester.
+                        </span>
+                      
+                    </p>
+                  </div>
+                </div>
+                
+                        
+                <div class="experience row">
+                  <div class="col-md-4">
+                    <h4>Phoenix Academy</h4>
+                    <p class="experience-period" style="margin-right: -12px;">
+                      2016				- 
+                      2018			</p>
+                  </div>
+                  <div class="col-md-8">
+                    <p>
+                      <strong style="font-size: 18px; font-family:'Nunito', sans-serif;">Higher Secondary school-Premier institute for IIT-JEE:</strong>
+                      <span class="hidden-phone" style="font-size: 18px;">
+                        The education given here was for cracking IIT-JEE.
+                        The most difficult entrance exam in India. It was 
+                        one of the top institute in my city which give 
+                        excellent results every year with great success rate. 
+                      </span>
+                      
+                    </p>
+                  </div>
+                </div>
+                
+                        
+                <div class="experience row">
+                  <div class="col-md-4">
+                    <h4>R.S.V School</h4>
+                    <p class="experience-period" style="margin-right: -12px;">
+                       2014				- 
+                       2016			</p>
+                  </div>
+                  <div class="col-md-8">
+                    <p>
+                      <strong style="font-size: 18px; font-family:'Nunito', sans-serif;">Highschool - Genral Schooling:</strong>
+                      <span class="hidden-phone" style="font-size: 18px;">
+                        I graduated highschool, where I enjoyed doing science, math and english. 
+                        It is a highly reputated school with over more than 10,000 students.
+                        It was very essential for the overall development one is searching
+                        for in his life.
+                      </span>
+                      <span class="experience-details">
+                        <span class="location">
+                          <span class="glyphicon glyphicon-map-marker"></span>
+                          					</span>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                
+                
+              </div>
+              <h3 style="text-align: center; margin-top: 20px;" >Skills</h3>
+              <hr style=" height:2px; background-color:rgba(245, 245, 245, 0.5); margin: -4px  auto 10px auto; width: 2.5%;">
+              <hr style=" background-color:rgba(245, 245, 245, 0.5); margin: 40px  auto 20px auto; width: 85%;">
+              <div class="container2">
+                <div class="card">
+                  <div class="box">
+                    <div class="percent">
+                      
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      
+                      <div class="number">
+                        <h2 style="font-family:'Nunito', sans-serif; font-size: 28px;">90<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text" style="font-family:'Nunito', sans-serif; font-size: 16px;">Photoshop/Lightroom</h2>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="box">
+                    <div class="percent">
+                      
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      
+                      <div class="number">
+                        <h2 style="font-family:'Nunito', sans-serif; font-size: 28px;">55<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text" style="font-family:'Nunito', sans-serif; font-size: 16px;">Web-Development</h2>
+                  </div>
+                </div>
+                
+                <div class="card">
+                  <div class="box">
+                    <div class="percent">
+                      
+                      <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70"></circle>
+                      </svg>
+                      
+                      <div class="number">
+                        <h2 style="font-family:'Nunito', sans-serif; font-size: 28px;">80<span>%</span></h2>
+                      </div>
+                    </div>
+                    <h2 class="text" style="font-family:'Nunito', sans-serif; font-size: 16px;">C,C++,Python, ML</h2>
+                  </div>
+                </div>
+
+              </div>
+                
+            </div>
+        </section>
+        <!--Project-->
+        <section id="project">
+              <div class="heading">
+                <h3>Project</h3>
+                <hr style=" height:2px; background-color:rgba(0, 0, 0, 1); margin: -4px  auto 10px auto; width: 5%;">
+                <p style="font-size: 18px;">"You can do anything you set your mind to."<br>
+                        -Benjamin Franklin
+                </p>
+              </div>
+              <hr style=" background-color:rgba(245, 245, 245, 0.5); margin: 40px  auto 0px auto; width: 20%;">
+              <div id="button-image">
+                <img class="button-image" src="Wfinal.png">
+                <a href="https://www.coursera.org/programs/indian-institute-of-technology-delhi-on-coursera-eu0i2" target="_blank" style="text-decoration: none;">
+                <div class="button">
+                  <h3 >Web Development</h3>
+                  <p>Coursera Online classes</p>
+                </div>
+                </a>
+              </div>
+        </section>
+        <!------Portfolio------>
+        <section id="portfolio">
+              <div class="heading">
+                  <h3>Portfolio</h3>
+                  <hr style=" height:2px; background-color:rgba(0, 0, 0, 1); margin: -4px  auto 10px auto; width: 15%;">
+                  <p style="font-size: 18px;">“A thing that you see in my pictures is that I was not afraid to fall in love with these people.”<br>
+                    — Annie Leibovitz
+                  </p>
+              </div>
+              <hr style="background-color: rgb(245, 245, 245, .5); margin: -330px auto 0px auto ; width: 50%; ">
+              <h5 style="text-align: center; margin: 20px 0px -20px 0px; font-size: 28px; font-weight: 600;">Snaps</h5>
+              <hr style="background-color: black; margin: 25px auto -13px auto; width: 2%;">
+              <div class="gallery">
+                <a href="images/cimage1.jpg" data-lightbox="mygallery" data-title="Kite" ><img src="images/i1.png"></a>
+                <a href="images/image2.jpg" data-lightbox="mygallery" data-title="Astrunaut"><img src="images/i2.png"></a>
+                <a href="images/image3.jpg" data-lightbox="mygallery" data-title="Deeya"><img src="images/i3.png"></a><br>
+                <a href="images/image8.jpg" data-lightbox="mygallery" data-title="Sparrow"><img src="images/i8.png"></a>
+                <a href="images/image9.jpg" data-lightbox="mygallery" data-title="PS"><img src="images/i9.png"></a>
+                <a href="images/image6.jpg" data-lightbox="mygallery" data-title="Cat"><img src="images/i6.png"></a><br>
+                <a href="images/image7.jpg" data-lightbox="mygallery" data-title="Smoke"><img src="images/i7.png"></a>
+                <a href="images/image4.jpg" data-lightbox="mygallery" data-title="Duck"><img src="images/i4.png"></a>
+                <a href="images/image5.jpg" data-lightbox="mygallery" data-title="Ritika"><img src="images/i5.png"></a>
+              </div>
+
+              <h5 style="text-align: center; margin: 20px 0px -20px 0px; font-size: 28px; font-weight: 600;">Videos</h5>
+              <hr style="background-color: black; margin: 25px auto 8px auto; width: 2%;">
+              <div class="container">
+                  <div class="vid">
+                    <img src="images/Video-Thumbnail/th1.png" class="img-fluid">
+                    <img src="images/play-btn.png" class="play-btn" data-toggle="modal" data-target="#play-video-1">  
+                  </div>
+                  <div class="vid">
+                    <img src="images/Video-Thumbnail/th2.png" class="img-fluid">
+                    <img src="images/play-btn.png" class="play-btn" data-toggle="modal" data-target="#play-video-2" >  
+                  </div>
+              </div>
+              <div class="modal fade" id="play-video-1">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h5 style="color: whitesmoke;">Vindhyachal Advertisement</h5>
+                      <video width="100%" controls loop>
+                        <source src="videos/Ad making.mp4" type="video/mp4" >
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="modal fade" id="play-video-2">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <h5 style="color: whitesmoke;">B-roll</h5>
+                      <video width="100%" controls>
+                        <source src="videos/Broll.mp4" type="video/mp4" >
+                      </video>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-------Get in Touch-------->
+        <section id="contact">
+          <div class="container">
+            <div class="heading">
+              <h2>Get In Touch</h2>
+              <hr style=" height:2px; background-color: rgba(255, 255, 255, 0.733);; margin: -4px  auto 10px auto; width: 8%;">
+              <p style="font-size: 18px;">“If I had asked people what they wanted, they would have said faster horses. ”<br>
+                - Henry Ford</p>
+            </div>
+            <hr style=" background-color: rgb(245, 245, 245, .5); width: 50%; margin: 40px auto 30px auto; ">
+            <div class="information">
+                <i class="fas fa-map-marker-alt" style="position: relative; left:-20px; top: 25px; font-size: 20px;"></i>
+                <p style="font-size: 18px; padding-left: 10px;">Vindhyachal Hostel, IIT Delhi, Hauz Khas, New Delhi, 110016</p>
+                <i class="fas fa-mobile" style="position: relative; left:-20px; top: 25px; font-size: 20px; "></i>
+                <p style="font-size: 18px;padding-left: 10px;">+918890410233</p>
+                <i class="fas fa-envelope" style="position: relative; left:-20px; top: 25px; font-size: 20px; "></i>
+                <p style="font-size: 19px;padding-left: 10px;"><a href="mailto:sonipraveen255@gmail.com" style="color: rgba(245, 245, 245, 0.753);">sonipraveen255@gmail.com</a></p>
+            </div>
+            <div class="socialmedia">
+              <a href="https://www.facebook.com/praveen.soni.37266" class="fb" target="_blank"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://www.instagram.com/thee__ps_/" class="insta" target="_blank"><i class="fab fa-instagram"></i></a>
+              <a href="https://twitter.com/Praveen38427691" class="twit" target="_blank"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.linkedin.com/in/praveen-soni-598500190/" class="linked" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+      </section>
+    </body>
+</html>

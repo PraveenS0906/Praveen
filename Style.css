@@ -1,0 +1,678 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    
+}
+@font-face{
+    src: url(fonts/OpenSansCondensed-Light.ttf);
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+@font-face{
+        src: url(fonts/Lekton-Regular.ttf);
+        font-family:'Lekton', sans-serif;
+}
+@font-face{
+    src: url(fonts/Nunito-ExtraLight.ttf);
+    font-family:'Nunito', sans-serif;
+}
+@font-face{
+    src: url(fonts/Abel-Regular.ttf);
+    font-family: 'Abel', sans-serif;;
+}
+h1{
+    font-family:'Lekton', sans-serif;
+}
+p{
+    font-family:'Nunito', sans-serif;
+}
+h2{
+    font-family:'Lekton', sans-serif;
+    font-variant: small-caps;
+}
+h3{
+    font-family:'Lekton', sans-serif;
+}
+h4{
+    font-family:'Lekton', sans-serif;
+}
+h5{
+    font-family:'Lekton', sans-serif;
+}
+
+body{
+    margin: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* navigation-bar*/
+.navbar-brand img{
+    height: 60px;
+    padding-left: 30px;
+}
+#nav-bar{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.navbar-nav li a{
+        float: right;
+        text-align: left;    
+}
+.nav-item .current{
+    background-color: red;
+}
+.navbar a:hover{
+    background-color: rgb(90, 186, 184);
+    color: white !important;
+    }
+
+.navbar-toggler{
+    border: none !important;
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    color: whitesmoke !important;
+}
+.nav-link{
+    background-color: rgb(31, 30, 30);
+    height: 60px;    
+    width: 120px;
+}
+
+.nav-item a{
+    padding: 17.5px 20px 17.5px 20px !important;
+    
+}
+
+.collapse ul{
+    display: block;
+    position: fixed;
+    top: 10%;
+    right: 5%;
+    
+}
+/*--slider--*/
+
+.carousel-caption{
+    top: 40%;
+}
+.carousel-caption h1{
+    color: black;
+    font-size: 60px;
+    font-variant: small-caps;
+}
+#slider .carousel-caption .left1{
+            font-size: 60px;
+            position: relative;
+            top: 20px;
+            left: -230px;
+            animation-name: myleft1;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+}
+#slider .carousel-caption .right1{
+    font-size: 60px;
+    position: relative;
+    top: -75px;
+    right: -170px;
+    animation-name: myright1;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.carousel-caption{
+    margin-left: 120px;
+}
+
+@keyframes myleft1{
+    0%{left: -400px;}
+    100%{left: -230px;}
+}
+@keyframes myright1{
+    0%{right: -400px;}
+    100%{right: -170px;}
+}
+#slider .carousel-caption .left2{
+            animation-name: myleft2;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+
+#slider .carousel-caption .right2{
+            color: white;
+            animation-name: myright2;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: ease-in-out;
+}
+
+@keyframes myleft2{
+        0%{color: black; transform: scale(1);}
+        50%{color: rgb(255, 255, 255); transform: scale(1.1);}
+        100%{color: black; transform: scale(1);}
+}
+@keyframes myright2{
+    0%{color:white; transform: scale(1);}
+    50%{color: black; transform: scale(.9);}
+    100%{color: white; transform: scale(1);}
+}
+#slider .carousel-caption .left3{
+                position: relative;
+                top: 40px;
+                left: -200px;
+                animation-name: myleft3;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+#slider .carousel-caption .right3{
+            position: relative;
+            bottom: 40px;
+            right: -40px;
+            animation-name: myright3;
+            animation-duration: 1.5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+}
+@keyframes myleft3{
+            0%{top: -30px;}
+            100%{top: 40px;}
+}
+@keyframes myright3{
+            0%{bottom: -30px;}
+            100%{bottom: 40px;}
+}
+.carousel-caption h1{
+            font-family: 'Nunito', sans-serif;
+}
+
+/*---Profile---*/
+
+#about .heading{
+    margin-top: 40px;
+    text-align: center;
+    content: '';
+    }
+#about .heading h1{
+        font-size: 60px;
+        font-family:'Lekton', sans-serif;
+        font-variant: small-caps;
+        letter-spacing: 6px;
+    }
+
+
+.about-content{
+    padding-top: 10px;
+    width: 340px;
+}
+#about .container h2{
+            padding-top: 20px;
+}
+#about .container{
+    margin-left: 24%;
+    
+}
+#about .profile-pic img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: solid 8px black;
+    margin-left: -200px;
+    
+}
+#about .details{
+    margin-left: 70px;
+    position: relative;
+    top: 20px;
+    
+}
+.details p{
+    margin-top: -12px;
+    
+}
+
+#about .social-icons{
+        padding-top: 20px;
+}
+
+#about .social-icons i{
+    font-size: 30px;
+    color: black;
+    transition: .5s;
+    line-height: 50px;
+}
+#about .social-icons i:hover{
+    color:white;
+}
+#about .social-icons a{
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    transition: .5s;
+    box-shadow: 0 0 4px black;
+}
+#about .social-icons a:hover{
+    transform: translate(0,-10px);
+}
+#about .social-icons .fb:hover{
+            background-color:#3b5999;
+}
+#about .social-icons .insta:hover{
+    background-color:#e4405f;
+}
+#about .social-icons .twit:hover{
+    background-color: #55acee;
+}
+#about .social-icons .linked:hover{
+    background-color: #0077B5;
+}
+.social{
+    position: relative;
+    left: 690px;
+    top: -90px;
+}
+.myresume .btn{
+    color: white;
+    background-color: #0077B5;
+    position: relative;
+    left: 150px;
+    top: -150px;
+}
+/*----experiences----*/
+#experiences{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.8),rgba(0, 0, 0, 0.8)), url(bg4.jpg);
+    z-index: -2;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: rgba(245, 245, 245, 0.5);
+    padding-top: 20px;
+    padding-bottom: 60px;
+    font-weight: 600;
+    
+}
+#experiences h1{
+    text-align: center;
+        font-size: 45px;
+        font-weight: 600;
+        font-variant: small-caps;
+        letter-spacing: 6px;
+}
+#experiences h1::after{
+    content: '';
+    background-color: rgba(245, 245, 245, 0.5);
+    display: block;
+    height: 3px;
+    width: 175px;
+    margin:5px auto 5px;
+}
+#experiences p{
+    text-align: center;
+    margin-top: 20px;
+}
+.education .left p{
+    margin-left: -1030px;
+    position: relative;
+    top: -20px;
+}
+.education .left{
+    margin-left: 20px;
+}
+.education .right h5{
+    margin-left: 600px;
+    position: relative;
+    top: -87px;
+    
+}
+.experiences h4{
+    margin-top: 20px;
+}
+.experience-period{
+    margin-left: -255px;
+    position: relative;
+    top: -10px;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+    
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px, 5px); 
+    position:absolute ;
+    left: 20px;
+}
+svg circle:nth-child(2)
+{
+    stroke-dasharray: 440;
+     stroke-dashoffset: 440;
+}
+.card:nth-child(1) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 90) / 100);
+    stroke: #00ff43;
+}
+.card:nth-child(2) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 55) / 100);
+    stroke: #00a1ff;
+}
+.card:nth-child(3) svg circle:nth-child(2){
+    stroke-dashoffset: calc(440 - (440 * 80) / 100);
+    stroke: #be1f81;
+}
+.container2{
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    width: 1000px;
+}
+.container2 .card{
+    position: relative;
+    width: 250px;
+    background: url(Black/5.jpg);
+
+    
+    display: flex;
+    justify-content: center;
+    
+    height: 300px;
+    border-radius: 4px;
+    text-align: center;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.container2 .card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 1);
+}
+.container2 .card::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    /*background: rgba(255, 255, 255, 0.3);*/
+    pointer-events: none;
+    z-index: 1;
+}
+.percent {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: inset 0 0 50px #000;
+    background: #222;
+    z-index: 1000;
+    left: 44px;
+}
+.percent .number{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+}
+.percent .number h2{
+    color: #777;
+    font-weight: 700;
+    font-size: 40px;
+    transition: .5s;
+}
+.percent .number h2 span{
+    font-size: 24px;
+    color: #777;
+} 
+
+.card:hover .percent .number h2{
+    color: #fff;
+    font-size: 46px;
+}
+
+.card:hover .percent .number h2 span{
+    color: #fff;
+}
+.text
+{
+    position: relative;
+    color: #777;
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+.card:hover .text{
+    color: #fff;
+}
+.container2{
+    left: 42px;
+    top: 40px;
+}
+/*----Project----*/
+#project .heading{
+    text-align: center;
+    margin-top: 40px;
+    
+}
+#project .heading h3{
+    font-size: 48px;
+    font-weight: 600;
+    font-variant: small-caps;
+    letter-spacing: 6px;
+}
+
+#button-image img{
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    display: block;
+    margin: 20px auto;
+}
+#button-image .button{
+    position: relative;
+    width: 200px;
+    height: 300px;
+    border-radius: 6px;
+    text-align: center;
+    margin: -320px auto;
+    color: rgba(255, 255, 255, 0.95);
+    opacity: 0;
+    padding-top: 180px;
+    transition: ease-in-out;
+    transition-duration: .5s;
+}
+#button-image .button:hover{
+    box-shadow: 0 15px 35px black;
+    opacity: 1;
+}
+.button-image img:hover{
+            transform: scale(1.1);
+}
+#button-image .button h2:hover{
+    transform: translateX(10px);
+}
+
+/*-----Portfolio-----*/
+#portfolio .heading{
+    display: block;
+    width: 800px;
+    margin: 380px auto;
+    text-align: center;
+}
+#portfolio .heading h3{
+    font-size: 48px;
+    font-variant: small-caps;
+    letter-spacing: 6px;
+    font-weight: 600;
+}
+#portfolio .card{
+    position: relative;
+    background: #fff;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+}
+.gallery{
+    margin: 0 auto;
+    padding: 20px;
+}
+.gallery img{
+    position: relative;
+    margin: 30px;
+    left: 24.5%;
+    transition: ease-in-out;
+    transition-duration: .5s;
+    opacity: 1;
+}
+.gallery img:hover{
+        transform: scale(1.1);
+        box-shadow: 2px 2px 16px black;
+        opacity: .7;
+}
+.play-btn{
+    
+    cursor: pointer;
+    position: relative;
+    left: -170px;
+    transition: .5s;
+    opacity: 0;
+   
+}
+.vid:hover .play-btn{
+    opacity: 1;
+}
+#portfolio .container{
+    display: block;
+    position: relative;
+    left: 100px;
+    padding: 30px 105px;
+    
+}
+#portfolio .zoom{
+    background-color: coral;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 40px;
+    overflow: hidden;
+}
+.container .vid{
+    margin-right: 70px;
+    display: inline-block;
+    transition: .5s;
+    opacity: 1;
+  
+}
+.modal-content{
+    background: transparent !important;
+    border: none !important;
+}
+.container .vid:hover{
+            transform: scale(1.1);
+            opacity: .8;
+}
+
+
+/*------Contact-------*/
+#contact{
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 600px;
+    color: rgba(255, 255, 255, 0.733);
+}
+.information{
+    position: relative;
+    left: 27%;
+}
+#contact .heading{
+    text-align: center;
+}
+#contact .heading{
+    padding-top: 30px;
+}
+#contact{
+    margin-top: 40px;
+}
+#contact .social-icons{
+    padding-top: 20px;
+}
+
+#contact  .socialmedia i{
+font-size: 30px;
+color: black;
+transition: .5s;
+line-height: 50px;
+}
+#contact  .socialmedia i:hover{
+color:white;
+}
+#contact  .socialmedia a{
+position: relative;
+display: inline-block;
+margin-right: 20px;
+width: 50px;
+height: 50px;
+border-radius: 50%;
+background-color: rgb(255, 255, 255);
+text-align: center;
+transition: .5s;
+box-shadow: 0 0 4px black;
+top: 130px;
+right: 25%;
+}
+#contact  .socialmedia a:hover{
+transform: translate(0,-10px);
+}
+#contact  .socialmedia .fb:hover{
+        background-color:#3b5999;
+}
+#contact  .socialmedia .insta:hover{
+background-color:#e4405f;
+}
+#contact  .socialmedia .twit:hover{
+background-color: #55acee;
+}
+#contact  .socialmedia .linked:hover{
+background-color: #0077B5;
+}
+.socialmedia{
+width: 500px;
+display: block;
+margin: -70px 0 0 550px;
+}
+/*
+.icon{
+    font-size: 40px;
+    margin: 20px auto;
+    padding: 20px;
+    height: 80px;
+    width: 80px;
+    border: 1px solid coral;
+    border-radius: 50%;
+}
+#experiences p{
+    margin-top: 20px;
+    color: whitesmoke;
+    
+
+}*/
